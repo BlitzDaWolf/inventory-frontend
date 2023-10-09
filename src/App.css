@@ -1,0 +1,126 @@
+.card-display {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.card {
+  width: 480px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.card-name {
+  border-bottom: 1px solid grey;
+  background-color: #555;
+  height: 2.5rem;
+}
+
+.card-name > p {
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 0.25rem 0;
+  padding-left: 10px;
+}
+
+.card-content > p {
+  margin: 0;
+  padding: 0;
+}
+
+.add{
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: lightgreen;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.add > div {
+  width: 45px;
+  height: 6px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.add-2 {
+  rotate: 90deg;
+  top: 21px;
+  left: 7px;
+}
+.add-1 {
+  top: 27px;
+  left: 8px;
+}
+
+.navbar {
+  width: 99vw;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar > input[type=text] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #b4b4b4;
+	background: rgba(#b4b4b4, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #b4b4b4;
+}
+
+.button{
+  background-color: #555;
+  padding: 3px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.modal{
+  z-index: 5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.modal-body {
+  z-index: 8;
+  max-width: 960px;
+  margin: 25px auto;
+  border: 2px solid grey;
+  background-color: #999;
+  border-radius: 5px;
+  height: 90%;
+}
+
+.modal-head {
+  background-color: #555;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 0 5px;
+}
+
+.modal-close {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
